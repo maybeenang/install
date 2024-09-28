@@ -24,6 +24,8 @@ else
   exit 1
 fi
 
+PROD_CLOUDFRONT_URL=${PROD_CLOUDFRONT_URL:-'https://d3kgj69l4ph6w4.cloudfront.net/static'}
+
 C9_DIR=$HOME/.c9
 if [[ ${1-} == -d ]]; then
     C9_DIR=$2
